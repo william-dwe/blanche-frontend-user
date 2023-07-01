@@ -1,0 +1,9 @@
+@use '../../../../styles/variables.scss' as *;
+
+.product {
+  &__title {
+    font-size: 1.5rem;
+    font-weight: $text-bold;
+    margin-bottom: 1rem;
+  }
+}

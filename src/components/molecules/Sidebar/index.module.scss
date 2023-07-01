@@ -1,0 +1,11 @@
+.sidebar {
+  background-color: white !important;
+  padding: 0.6rem 0.8rem;
+  &__menu {
+    height: 100%;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+}

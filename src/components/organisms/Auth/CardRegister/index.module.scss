@@ -1,0 +1,45 @@
+@use '../../../../styles/variables' as *;
+
+.card__register {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  line-height: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h6 {
+      font-size: 2rem;
+      font-weight: $text-bold;
+      color: $primary-100;
+    }
+
+    a {
+      color: $primary-70;
+      font-size: 1.1rem;
+    }
+    margin-bottom: 1.5rem;
+  }
+
+  &__alert {
+    margin-bottom: 1rem;
+  }
+
+  &__email {
+    color: $gray;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+
+    span {
+      font-weight: $text-bold;
+    }
+  }
+
+  p {
+    color: $gray;
+  }
+}

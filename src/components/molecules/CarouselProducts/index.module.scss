@@ -1,0 +1,15 @@
+.list__products {
+  margin-top: 0.8rem;
+  gap: 1rem;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 0 1rem;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

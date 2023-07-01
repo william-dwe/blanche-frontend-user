@@ -1,0 +1,102 @@
+@use '../../../../styles/variables.scss' as *;
+.cart__summary {
+  box-shadow: $box-shadow;
+  position: fixed;
+  max-width: 350px;
+  width: 95%;
+  border-radius: 1.1rem;
+
+  &__modal {
+    text-align: center;
+
+    &__header {
+      h5 {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  &__button {
+    margin-top: 1rem;
+    p {
+      color: $gray;
+    }
+  }
+
+  &__description {
+    p {
+      font-size: 1.2rem;
+      font-weight: $text-medium;
+    }
+
+    &__total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.2rem;
+      p {
+        font-size: 1rem;
+        font-weight: $text-regular;
+        color: $gray;
+      }
+
+      &:last-child {
+        p {
+          font-size: 1.2rem;
+          font-weight: $text-medium;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &__quantity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 0 0;
+
+    p {
+      font-size: 0.8rem;
+      color: $gray;
+      span {
+        font-size: 1rem;
+        font-weight: $text-bold;
+        color: black;
+      }
+    }
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    span {
+      font-size: 1rem;
+      font-weight: $text-regular;
+      color: $gray;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: $text-medium;
+      color: $primary-100;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

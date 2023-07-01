@@ -1,0 +1,32 @@
+@use 'src/styles/variables.scss' as *;
+
+.most__purchased {
+  &__header {
+    font-weight: $text-bold;
+    font-size: 1.25rem;
+  }
+
+  &__link {
+    font-size: 1.1rem;
+    color: $primary-60;
+    &:hover {
+      color: $primary-80;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    p {
+      font-size: 1.1rem;
+      font-weight: $text-medium;
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

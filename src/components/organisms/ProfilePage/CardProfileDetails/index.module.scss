@@ -1,0 +1,5 @@
+@use 'src/styles/variables' as *;
+.card__profile__details {
+  box-shadow: $box-shadow;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}

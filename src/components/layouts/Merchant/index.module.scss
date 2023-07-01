@@ -1,0 +1,11 @@
+.merchant__layout {
+  &__content {
+    height: 100%;
+    min-height: 100vh;
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+  &__container {
+    background-color: white;
+  }
+}

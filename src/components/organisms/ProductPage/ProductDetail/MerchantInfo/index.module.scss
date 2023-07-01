@@ -1,0 +1,36 @@
+@use '../../../../../styles/variables.scss' as *;
+.merchant__info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+
+  &__rate {
+    &__count {
+      margin-left: 0.25rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    &__link {
+      font-size: 1rem;
+      font-weight: $text-medium;
+      color: $primary-100;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $gray;
+      font-weight: $text-medium;
+    }
+  }
+}

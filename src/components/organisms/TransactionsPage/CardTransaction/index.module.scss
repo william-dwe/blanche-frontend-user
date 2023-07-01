@@ -1,0 +1,123 @@
+@use '../../../../styles/variables.scss' as *;
+
+.ct {
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+
+  &__header {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.875rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__flex {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &__invoice {
+      color: $gray;
+    }
+
+    &__store {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &__name {
+        font-weight: $text-bold;
+      }
+    }
+  }
+  &__product {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    &__image {
+      width: 75px;
+      height: 75px;
+      margin: 0;
+
+      &__img {
+        border-radius: 0.25rem;
+      }
+    }
+    &__details {
+      &__name {
+        font-weight: $text-bold;
+        margin-bottom: 0.5rem;
+      }
+      &__quantity {
+        color: $gray;
+        font-size: 0.875rem;
+      }
+      &__others {
+        margin-top: 0.25rem;
+        color: $gray;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  &__divider {
+    margin: 1rem 0;
+  }
+  &__more {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    &__price {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      &__text {
+        color: $gray;
+      }
+      &__value {
+        color: black;
+        font-weight: $text-bold;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      &__details {
+        font-size: 0.875rem;
+        color: $primary-60;
+        &:hover {
+          color: $primary-70;
+        }
+        padding: 0;
+
+        &__btn {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

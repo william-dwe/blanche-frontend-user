@@ -1,0 +1,27 @@
+@use '../../../../styles/variables.scss' as *;
+
+.plp {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    &__title {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+}

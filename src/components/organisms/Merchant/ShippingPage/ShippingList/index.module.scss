@@ -1,0 +1,8 @@
+.sl {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    margin-top: 1rem;
+  }
+}

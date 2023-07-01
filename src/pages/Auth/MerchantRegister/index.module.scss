@@ -1,0 +1,16 @@
+.merchant__register__page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__image {
+    width: 550px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 1210px) {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+}

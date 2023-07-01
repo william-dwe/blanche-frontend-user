@@ -1,0 +1,21 @@
+dispatch:
+# - url: "staging.blanche.life/*"
+#   service: staging
+
+# - url: "dev.blanche.life/*"
+#   service: default
+
+# - url: "www.blanche.life/*"
+#   service: frontend
+
+# - url: "blanche.life/*"
+#   service: frontend
+
+# - url: "admin.blanche.life/*"
+#   service: frontend-admin
+
+- url: "www.williamwibowo.com/*"
+  service: frontend
+  
+- url: "williamwibowo.com/*"
+  service: backend

@@ -1,0 +1,46 @@
+@use '../../../../styles/variables.scss' as *;
+
+.product__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px $lightgray solid;
+  padding: 0.5rem 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:hover {
+    .cart__item__title {
+      color: $primary-90;
+    }
+  }
+
+  &__title {
+    color: $primary-80;
+    font-weight: $text-bold;
+    transition: color 0.3s ease;
+  }
+
+  &__details {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__price {
+    font-weight: $text-bold;
+    color: $orange;
+  }
+
+  &__quantity {
+    font-size: 0.75rem;
+    color: $gray;
+  }
+}

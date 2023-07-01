@@ -1,0 +1,54 @@
+@use 'src/styles/variables' as *;
+.product__action {
+  display: flex;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $gray;
+    border-radius: 0;
+  }
+
+  &__fav_filled{
+    @extend .product__action__btn;
+    color: $red;
+  }
+
+  &__modal {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  &__share {
+    margin-top: 2rem;
+
+    h6 {
+      font-size: 1rem;
+      font-weight: $text-medium;
+      margin-bottom: 0.7rem;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use 'src/styles/variables.scss' as *;
+
+.voucher__page {
+  &__header {
+    &__title {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+  }
+}

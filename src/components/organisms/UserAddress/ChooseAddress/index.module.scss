@@ -1,0 +1,100 @@
+@use 'src/styles/variables' as *;
+.choose__address {
+  padding: 0;
+  min-height: 7rem;
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    padding: 0.7rem;
+  }
+  &__title {
+    font-size: 1rem;
+  }
+  p {
+    margin-bottom: 0.3rem;
+  }
+
+  &__modal {
+    &__radio {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  p {
+    color: $gray;
+  }
+  &__info {
+    h6 {
+      font-size: 1.1rem;
+      font-weight: $text-medium;
+      margin-bottom: 1rem;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      p {
+        font-size: 0.9rem;
+        font-weight: $text-medium;
+        color: $gray;
+      }
+    }
+
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.card__address {
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 520px;
+  max-width: 70vw;
+  &__active {
+    background-color: $primary-10;
+    border: 1px solid $primary-60;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    p {
+      font-size: 1rem;
+      font-weight: $text-medium;
+      color: $gray;
+    }
+  }
+
+  &__content {
+    li {
+      &:first-child {
+        font-size: 1.1rem;
+        font-weight: $text-medium;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    gap: 1rem;
+  }
+}

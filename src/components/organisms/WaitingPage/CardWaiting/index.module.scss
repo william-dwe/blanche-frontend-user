@@ -1,0 +1,67 @@
+@use '../../../../styles/variables.scss' as *;
+
+.cw {
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+      color: $gray;
+      margin-bottom: 0.75rem;
+    }
+
+    &__desc {
+      font-weight: $text-medium;
+    }
+
+    &__right {
+      text-align: right;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__before {
+      color: $gray;
+      text-align: right;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+    }
+
+    &__expired {
+      color: $primary-60;
+      font-weight: $text-medium;
+    }
+  }
+
+  &__divider {
+    margin: 1rem 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__total {
+      color: $gray;
+
+      span {
+        font-weight: $text-bold;
+        color: black;
+      }
+    }
+  }
+}

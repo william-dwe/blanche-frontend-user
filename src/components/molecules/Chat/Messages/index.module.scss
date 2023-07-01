@@ -1,0 +1,19 @@
+@use '../../../../styles/variables.scss' as *;
+
+.messages {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-y: auto;
+  height: calc(100vh - 72px - 52px - 59.2px);
+
+  &__no_action {
+    height: calc(100vh - 72px - 52px);
+  }
+
+  &__info {
+    color: $gray;
+    text-align: center;
+  }
+}

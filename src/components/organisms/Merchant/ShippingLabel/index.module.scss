@@ -1,0 +1,81 @@
+@use 'src/styles/variables' as *;
+
+.shipping__label {
+  border: 1px solid black;
+  padding: 1rem;
+  width: 550px;
+  line-height: 1;
+  &__title {
+    font-size: 1.1rem;
+    font-weight: $text-medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted black;
+  }
+  &__barcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__delivery {
+    font-size: 1.1rem;
+    font-weight: $text-bold;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2rem 0 1rem 0;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dotted black;
+
+    &__item {
+      display: flex;
+
+      &__title {
+        min-width: 7rem;
+        width: 5rem;
+        span {
+          font-weight: $text-bold;
+          font-size: 1rem;
+          color: $gray;
+        }
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &__user {
+          font-weight: $text-bold;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__product {
+    h6 {
+      font-weight: $text-bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+    &__content {
+      list-style-type: decimal;
+      padding-left: 1rem;
+
+      ol {
+        background-color: aquamarine;
+      }
+    }
+  }
+}

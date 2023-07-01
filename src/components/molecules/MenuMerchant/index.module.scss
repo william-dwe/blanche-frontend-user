@@ -1,0 +1,80 @@
+@use 'src/styles/variables' as *;
+.menu__merchant {
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    p {
+      font-size: 1rem;
+      color: $gray;
+      font-weight: $text-medium;
+      width: 100%;
+    }
+  }
+
+  &__card__profile {
+    box-shadow: $box-shadow;
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    h6 {
+      font-weight: $text-bold;
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__card__wallet {
+    box-shadow: $box-shadow;
+    display: grid;
+    grid-template-columns: 0.4fr 2fr 1fr;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+
+    &__icon {
+      background-color: $primary-70;
+      padding: 0.6rem;
+      display: flex;
+
+      border-radius: 100%;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    &__content {
+      h6 {
+        font-weight: $text-bold;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__register {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    p {
+      font-size: 1rem;
+      color: $gray;
+      font-weight: $text-bold;
+    }
+  }
+}

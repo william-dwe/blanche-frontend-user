@@ -1,0 +1,16 @@
+@use '../../styles/variables.scss' as *;
+
+.recommendation {
+  padding: 1rem 0;
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $text-bold;
+    padding: 2rem 0;
+  }
+
+  &__pagination {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

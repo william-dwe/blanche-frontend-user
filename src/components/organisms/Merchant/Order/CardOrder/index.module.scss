@@ -1,0 +1,181 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.card__order {
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+
+  &__form {
+    margin: 0 0 1rem 0;
+
+    &__label {
+      margin-bottom: 0rem;
+    }
+
+    &__input {
+      margin: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.875rem;
+
+    &__flex {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &__invoice {
+      color: $gray;
+    }
+
+    &__store {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &__name {
+        font-weight: $text-bold;
+      }
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.8rem;
+    align-items: flex-start;
+
+    &__address {
+      border-right: 1px solid rgb(207, 206, 206);
+      padding-right: 1.6rem;
+      &__title {
+        font-weight: $text-bold;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      &__text {
+        color: $gray;
+        font-size: 0.875rem;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      justify-content: space-between;
+
+      &__item {
+        &__title {
+          font-weight: $text-bold;
+          font-size: 1.1rem;
+        }
+
+        &__text {
+          color: $gray;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+  &__product {
+    display: flex;
+    border: 0.5px solid rgb(207, 206, 206);
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+    &__more {
+      margin-top: 1rem;
+      color: $gray;
+    }
+
+    &__image {
+      width: 75px;
+      height: 75px;
+      margin: 0;
+
+      &__img {
+        border-radius: 0.25rem;
+      }
+    }
+
+    &__desc {
+      &__name {
+        font-size: 1rem;
+        font-weight: $text-bold;
+      }
+    }
+    &__details {
+      &__name {
+        font-weight: $text-bold;
+        margin-bottom: 0.5rem;
+      }
+      &__quantity {
+        color: $gray;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &__divider {
+    margin: 1rem 0;
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.25rem;
+      font-size: 0.875rem;
+      &__text {
+        color: $gray;
+      }
+      &__value {
+        color: black;
+        font-weight: $text-bold;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+
+    &__details {
+      font-size: 0.875rem;
+      color: $primary-60;
+      &:hover {
+        color: $primary-70;
+      }
+      padding: 0;
+    }
+
+    &__link {
+      color: $primary-70;
+      font-size: 1rem;
+      font-weight: $text-medium;
+    }
+
+    &__btn {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

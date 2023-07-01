@@ -1,0 +1,28 @@
+@use 'src/styles/variables' as *;
+
+.dp {
+  margin-top: 2rem;
+  &__title {
+    font-weight: $text-bold;
+    font-size: 1.25rem;
+    color: $primary-80;
+    margin-bottom: 0.25rem;
+  }
+  &__info {
+    color: $gray;
+    line-height: 1.25rem;
+  }
+  &__header {
+    margin-bottom: 1rem;
+  }
+  &__picker {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  &__date {
+    font-weight: $text-medium;
+    font-size: 1rem;
+  }
+}

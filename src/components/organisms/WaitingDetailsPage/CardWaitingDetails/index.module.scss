@@ -1,0 +1,13 @@
+@use '../../../../styles/variables.scss' as *;
+
+.cwd {
+  &__header {
+    &__store {
+      font-weight: $text-bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

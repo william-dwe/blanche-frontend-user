@@ -1,0 +1,36 @@
+@use 'src/styles/variables' as *;
+.detail__voucher {
+  display: flex;
+  gap: 1rem;
+  height: fit-content;
+  align-items: center;
+  box-shadow: $box-shadow;
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__name {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+    &__period {
+      font-size: 1rem;
+      font-weight: $text-medium;
+    }
+    &__used {
+      display: flex;
+      gap: 1rem;
+    }
+    &__tag {
+      width: fit-content;
+    }
+  }
+}

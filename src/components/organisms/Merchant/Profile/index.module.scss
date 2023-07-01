@@ -1,0 +1,78 @@
+@use 'src/styles/variables' as *;
+
+.profile__section {
+  &__item {
+    margin-bottom: 1.5rem;
+    &__left {
+      h6 {
+        font-size: 1.5rem;
+        font-weight: $text-bold;
+      }
+      &__info {
+        margin-top: 0.5rem;
+        color: $gray;
+      }
+    }
+  }
+  &__avatar {
+    text-align: center;
+    box-shadow: $box-shadow;
+
+    &__photo {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      display: block;
+      width: 250px;
+      height: 250px;
+    }
+
+    &__info {
+      margin: 0 auto;
+      margin-top: 0.5rem;
+      color: $gray;
+      max-width: 200px;
+    }
+  }
+
+  &__tab {
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &__title {
+        font-size: 1.25rem;
+        font-weight: $text-bold;
+      }
+      &__button {
+        color: $primary-70;
+        font-weight: $text-bold;
+      }
+    }
+
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 1rem;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &__label {
+          color: $gray;
+          min-width: 100px;
+        }
+      }
+    }
+    &__pass {
+      display: block;
+      margin-top: 0.5rem;
+      color: $primary-70;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.product__detail {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

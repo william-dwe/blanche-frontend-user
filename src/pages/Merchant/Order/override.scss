@@ -1,0 +1,17 @@
+.order-tab {
+  background-color: white;
+  padding: 0 1rem;
+  border-radius: 12px;
+  font-size: 2rem;
+
+  .ant-tabs-tab {
+    min-width: 70px;
+    display: flex;
+    padding: 1rem 0 0.7rem 0 !important;
+    justify-content: center;
+
+    &-btn {
+      font-size: 1.1rem;
+    }
+  }
+}

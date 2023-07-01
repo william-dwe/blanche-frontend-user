@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as *;
+
+.filter {
+  box-shadow: $box-shadow;
+  padding: 0.5rem 0 1.25rem 0;
+  max-width: 400px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem 0 1rem 0;
+    max-width: 300px;
+  }
+}

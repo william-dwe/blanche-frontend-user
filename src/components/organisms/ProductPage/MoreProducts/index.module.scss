@@ -1,0 +1,19 @@
+@use 'src/styles/variables' as *;
+
+.seller__products {
+  margin-top: 2rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-weight: $text-bold;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    &__link {
+      font-weight: $text-bold;
+      color: $primary-60;
+    }
+  }
+}

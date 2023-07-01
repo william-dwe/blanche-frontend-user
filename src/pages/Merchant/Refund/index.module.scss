@@ -1,0 +1,9 @@
+@use '../../../styles/variables.scss' as *;
+.refund__page {
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $text-bold;
+    padding: 2rem 0;
+  }
+}

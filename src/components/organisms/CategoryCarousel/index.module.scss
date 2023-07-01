@@ -1,0 +1,14 @@
+@use './../../../styles/variables.scss' as *;
+
+.cc {
+  box-shadow: $box-shadow;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+
+  &__header {
+    font-weight: $text-bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}

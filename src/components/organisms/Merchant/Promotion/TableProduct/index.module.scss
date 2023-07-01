@@ -1,0 +1,52 @@
+@use 'src/styles/variables.scss' as *;
+
+.table__product {
+  &__pagination {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+.card__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:hover {
+    .card__product__title {
+      color: $primary-90;
+    }
+  }
+
+  &__title {
+    color: $primary-80;
+    font-weight: $text-bold;
+    transition: color 0.3s ease;
+  }
+
+  &__details {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__price {
+    font-weight: $text-bold;
+    color: $orange;
+  }
+
+  &__quantity {
+    font-size: 0.75rem;
+    color: $gray;
+  }
+}

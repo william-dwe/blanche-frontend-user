@@ -1,0 +1,20 @@
+@use '../../styles/variables.scss' as *;
+
+.favorite_product {
+  padding: 1rem 0;
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $text-bold;
+    padding: 2rem 0;
+  }
+
+  &__pagination {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  &__search_bar {
+    margin-bottom: 2rem;
+  }
+}

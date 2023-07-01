@@ -1,0 +1,22 @@
+.seller__page {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__notfound {
+    text-align: center;
+    &__item {
+      box-shadow: none;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__image {
+      width: 320px;
+      height: 320px;
+    }
+  }
+}

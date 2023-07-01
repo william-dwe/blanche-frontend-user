@@ -1,0 +1,42 @@
+@use '../../../../styles/variables.scss' as *;
+
+.wi {
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+    &__title {
+      margin-bottom: 0.5rem;
+      color: $gray;
+    }
+    &__value {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+    &__icon {
+      color: $primary-60;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__pin {
+    margin-bottom: 0.5rem;
+
+    &__button {
+      color: $primary-70;
+      font-weight: $text-medium;
+      &:hover {
+        cursor: pointer;
+        color: $primary-80;
+      }
+    }
+  }
+}

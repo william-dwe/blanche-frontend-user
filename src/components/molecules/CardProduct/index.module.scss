@@ -1,0 +1,96 @@
+@use '../../../styles/variables.scss' as *;
+
+.card__product {
+  box-shadow: $box-shadow;
+  padding: 0;
+  font-size: 0.75rem;
+  transition: all 0.4s ease;
+  min-height: 390px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  min-width: 230px;
+  flex-basis: 15.77%;
+
+  @media screen and (max-width: 1300px) {
+    flex-basis: 40%;
+    min-width: 150px;
+  }
+
+  @media screen and (max-width: 1068px) {
+    flex-basis: 40%;
+    min-width: 150px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+
+    .card__product__link {
+      color: $primary-70;
+    }
+  }
+
+  &__link {
+    padding: 0.75rem;
+    display: block;
+    min-height: 140px;
+    max-height: 140px;
+    height: 100%;
+  }
+
+  &__title {
+    min-height: max-content;
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+
+    &__img {
+      min-height: 240px;
+      max-height: 240px;
+      object-fit: cover;
+      background-position: center;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    &__star {
+      margin-right: 0.25rem;
+      color: orange;
+    }
+  }
+
+  &__location {
+    margin-top: 0.5rem;
+    color: $gray;
+  }
+
+  &__details {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    color: $gray;
+  }
+
+  &__price {
+    color: black;
+    font-weight: $text-bold;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+
+    &__disc {
+      margin-top: 0.5rem;
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

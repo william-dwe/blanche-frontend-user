@@ -1,0 +1,40 @@
+@use '../../../../styles/variables.scss' as *;
+
+.card__profile {
+  box-shadow: $box-shadow;
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      &__name {
+        font-weight: $text-bold;
+      }
+
+      &__member {
+        font-size: 0.75rem;
+        color: $gray;
+      }
+    }
+  }
+}
+
+.nav__profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__item {
+    p {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      color: $gray;
+      font-weight: $text-medium;
+    }
+  }
+}

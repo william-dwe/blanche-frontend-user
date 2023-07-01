@@ -1,0 +1,28 @@
+@use '../../../styles/variables.scss' as *;
+
+.tdp {
+  box-shadow: $box-shadow;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__header {
+    margin-bottom: 3rem;
+    &__title {
+      text-align: center;
+      font-weight: $text-bold;
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__invoice {
+      text-align: center;
+      font-size: 1rem;
+      color: $gray;
+    }
+  }
+
+  &__shipment {
+    margin: 0 auto;
+  }
+}

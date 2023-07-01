@@ -1,0 +1,49 @@
+@use '../../../styles/variables' as *;
+
+.usp {
+  padding: 0.5rem 0;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    &__delete {
+      color: $red;
+      padding: 0;
+      min-width: 0;
+      border: 0;
+    }
+
+    &__default {
+      padding: 0;
+      color: $primary-60;
+      min-width: 0;
+      border: 0;
+    }
+
+    &__number {
+      font-weight: $text-bold;
+      font-size: 1rem;
+      span {
+        font-weight: normal;
+      }
+    }
+
+    &__active {
+      color: $gray;
+      font-size: 0.875rem;
+      span {
+        font-weight: $text-bold;
+      }
+    }
+  }
+}

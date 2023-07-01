@@ -1,0 +1,35 @@
+@use '../../../../styles/variables.scss' as *;
+
+.pd {
+  &__title {
+    font-size: 1.25rem;
+    font-weight: $text-bold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__flex {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__label {
+      color: $gray;
+    }
+  }
+
+  &__divider {
+    margin: 1rem 0;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__total {
+    font-size: 1rem;
+    font-weight: $text-bold;
+  }
+}

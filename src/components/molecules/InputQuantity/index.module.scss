@@ -1,0 +1,16 @@
+@use 'src/styles/variables' as *;
+
+.input__quantity {
+  max-width: 200px;
+  &__button {
+    width: 2.6rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-weight: $text-regular;
+  }
+}

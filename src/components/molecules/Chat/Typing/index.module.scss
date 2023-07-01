@@ -1,0 +1,26 @@
+@use 'src/styles/variables.scss' as *;
+
+.typing {
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: $box-shadow;
+  align-items: center;
+  gap: 1rem;
+
+  &__input {
+    height: 20px;
+  }
+
+  &__btn {
+    height: 40px;
+  }
+
+  &__refresh {
+    height: 40px;
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../styles/variables.scss' as *;
+
+.waiting {
+  padding: 2rem 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0;
+  }
+}

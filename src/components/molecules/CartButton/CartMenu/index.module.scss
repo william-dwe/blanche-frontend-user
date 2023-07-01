@@ -1,0 +1,52 @@
+@use '../../../../styles/variables.scss' as *;
+
+.cart__menu {
+  position: absolute;
+  top: 40px;
+  right: 180px;
+  box-shadow: $box-shadow;
+  max-width: 400px;
+  background-color: white;
+  z-index: 999;
+
+  &__notfound {
+    box-shadow: none !important;
+    gap: 0rem;
+    padding: 0;
+
+    p {
+      font-size: 1rem;
+      font-weight: $text-regular;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+
+    &__button {
+      font-weight: $text-bold;
+      color: $primary-60;
+
+      &:hover {
+        color: $primary-70;
+      }
+    }
+
+    &__number {
+      font-weight: $text-bold;
+    }
+  }
+}

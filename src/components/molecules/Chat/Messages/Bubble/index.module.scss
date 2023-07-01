@@ -1,0 +1,27 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.bubble {
+  &__right {
+    text-align: right;
+  }
+
+  &__left {
+    text-align: left;
+  }
+  &__message {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    box-shadow: $box-shadow;
+    display: inline-block;
+  }
+  &__time {
+    font-size: 0.875rem;
+    color: $gray;
+  }
+  &__name {
+    font-weight: $text-medium;
+    color: $primary-60;
+    margin-bottom: 0.5rem;
+  }
+}

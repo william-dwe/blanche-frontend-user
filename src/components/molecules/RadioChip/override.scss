@@ -1,0 +1,11 @@
+.radio {
+  .ant-radio-button-wrapper {
+    text-align: center;
+    font-size: 0.875rem;
+    border-width: 1px;
+    border-radius: 1rem !important;
+    &::before {
+      display: none;
+    }
+  }
+}

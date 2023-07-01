@@ -1,0 +1,20 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.sl {
+  .ant-space-item {
+    box-shadow: $box-shadow;
+    padding: 1rem;
+  }
+  .ant-space {
+    width: 100%;
+    gap: 1rem !important;
+  }
+
+  .ant-checkbox-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &::after {
+      content: none;
+    }
+  }
+}

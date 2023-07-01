@@ -1,0 +1,29 @@
+@use '../../../styles/variables.scss' as *;
+
+.cart {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  &__button {
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &__icon {
+      font-size: 1.5rem;
+      color: $gray;
+    }
+
+    &__total {
+      color: white;
+    }
+
+    &__container {
+      position: relative;
+      display: inline-block;
+    }
+  }
+}

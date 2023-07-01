@@ -1,0 +1,36 @@
+.product {
+  &__page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6.5fr 2.3fr;
+    gap: 1rem;
+    align-items: start;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    &__notfound {
+      text-align: center;
+      &__item {
+        box-shadow: none;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      &__image {
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    &__lists {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

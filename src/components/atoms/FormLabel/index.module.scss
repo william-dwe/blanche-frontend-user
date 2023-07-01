@@ -1,0 +1,7 @@
+@use '../../../styles/variables.scss' as *;
+.label {
+  color: $primary-90;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: $text-medium;
+}

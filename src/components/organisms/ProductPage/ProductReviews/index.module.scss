@@ -1,0 +1,35 @@
+@use 'src/styles/variables.scss' as *;
+.product__reviews {
+  width: 100%;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: $text-bold;
+    margin-bottom: 1rem;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    &__filter {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      box-shadow: $box-shadow;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

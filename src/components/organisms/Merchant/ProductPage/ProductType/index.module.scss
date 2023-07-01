@@ -1,0 +1,34 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.pt {
+  box-shadow: $box-shadow;
+
+  &__title {
+    font-weight: $text-bold;
+    font-size: 1.25rem;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  &__info {
+    color: $gray;
+  }
+
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+  &__switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__label {
+    margin-top: 0.5rem;
+  }
+}

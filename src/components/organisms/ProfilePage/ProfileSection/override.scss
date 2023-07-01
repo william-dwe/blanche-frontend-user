@@ -1,0 +1,18 @@
+.header {
+  .ant-btn {
+    padding: 0;
+    border: none;
+    min-width: 0;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+.upload {
+  .ant-upload {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+@use '../../../styles/variables.scss' as *;
+.logo {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+.primary {
+  color: $primary-60;
+
+  &__dark {
+    color: $primary-90;
+  }
+}
+
+.secondary {
+  color: $primary-40;
+
+  &__dark {
+    color: $primary-50;
+  }
+}
+
+.extrasmall {
+  width: 150px;
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+
+.small {
+  width: 200px;
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+
+.medium {
+  width: 250px;
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+
+.large {
+  width: 500px;
+  display: block;
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+@use '../../../styles/variables.scss' as *;
+.auth__section__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+}

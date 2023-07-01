@@ -1,0 +1,24 @@
+@use 'src/styles/variables.scss' as *;
+
+.product__lists {
+  &__all {
+    &__title {
+      font-weight: $text-bold;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    &__results {
+      display: flex;
+      gap: 2rem;
+
+      &__left {
+        min-width: 250px;
+      }
+    }
+  }
+
+  &__divider {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}

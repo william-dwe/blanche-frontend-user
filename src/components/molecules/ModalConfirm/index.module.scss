@@ -1,0 +1,17 @@
+.modal__confirm {
+  text-align: center;
+
+  &__header {
+    h5 {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+  }
+}

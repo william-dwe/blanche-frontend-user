@@ -1,0 +1,35 @@
+@use '../../../../styles/variables.scss' as *;
+
+.sps {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+    &__left {
+      &__title {
+        font-size: 1.5rem;
+        font-weight: $text-bold;
+      }
+      &__info {
+        color: $gray;
+      }
+    }
+  }
+  &__list {
+    margin-bottom: 0.25rem;
+    &__info {
+      margin: 0;
+      margin-bottom: 0.25rem;
+      color: $gray;
+    }
+    &__divider {
+      margin: 0.5rem 0;
+    }
+    &__header {
+      font-size: 1.25rem;
+      font-weight: $text-bold;
+    }
+  }
+}

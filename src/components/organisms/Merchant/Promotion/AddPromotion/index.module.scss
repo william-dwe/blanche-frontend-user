@@ -1,0 +1,73 @@
+@use '/src/styles/variables.scss' as *;
+
+.form__promotion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__item {
+    box-shadow: $box-shadow;
+
+    &__header {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__title {
+        font-weight: $text-bold;
+        font-size: 1.2rem;
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      &__item {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        label {
+          width: 300px;
+          text-align: left;
+        }
+
+        &__label {
+          width: 400px;
+        }
+
+        &__input {
+          max-width: 30vw;
+          height: 2.4rem;
+        }
+      }
+    }
+
+    &__type {
+      display: flex;
+      gap: 1rem;
+      border: 1px solid $primary-60;
+      background-color: $primary-10;
+      padding: 1rem;
+      max-width: fit-content;
+      justify-self: end;
+      border-radius: 1rem;
+
+      p {
+        font-size: 1rem;
+        font-weight: $text-bold;
+
+        &:last-child {
+          color: $gray;
+          font-size: 0.8rem;
+          font-weight: $text-regular;
+        }
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}

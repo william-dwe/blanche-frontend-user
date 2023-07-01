@@ -1,0 +1,11 @@
+.ta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__details__btn {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../../../styles/variables.scss' as *;
+
+.wi {
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &__title {
+      margin-bottom: 0.5rem;
+      color: $gray;
+    }
+    &__value {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+    &__icon {
+      color: $primary-60;
+    }
+  }
+
+  &__flex {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,141 @@
+@import '../../../styles/variables.scss';
+.auth__layout__left {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+  max-width: 40vw;
+  width: 100%;
+
+  @media screen and (max-width: 1400px) {
+    padding: 0 3rem;
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 0 2rem;
+  }
+
+  background: -moz-linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 85%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 85%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 85%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0FAFE', endColorstr='#00ADEF', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 85%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 85%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0FAFE', endColorstr='#00ADEF', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 78%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    181deg,
+    rgba(0, 173, 239, 1) 0%,
+    rgba(128, 214, 247, 1) 41%,
+    rgba(224, 245, 253, 1) 78%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(240, 250, 254, 1) 100%
+  );
+
+  &__content {
+    background-color: rgba(255, 255, 255, 0.216);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+
+    @media screen and (max-width: 1400px) {
+      padding: 2rem;
+    }
+
+    @media screen and (max-width: 950px) {
+      padding: 1rem;
+    }
+    h5 {
+      font-size: 4rem;
+      line-height: 5rem;
+      font-weight: $text-bold;
+      color: white;
+
+      @media screen and (max-width: 1400px) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+
+      @media screen and (max-width: 950px) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+
+      span {
+        color: $primary-80;
+      }
+    }
+  }
+}

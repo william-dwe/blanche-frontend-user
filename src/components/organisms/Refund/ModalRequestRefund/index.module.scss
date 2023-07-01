@@ -1,0 +1,19 @@
+.modal__refund {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    &__button {
+      margin-left: 10px;
+    }
+  }
+}

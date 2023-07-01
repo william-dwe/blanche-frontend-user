@@ -1,0 +1,11 @@
+@use 'src/styles/variables.scss' as *;
+.refund__list {
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__filter {
+    display: flex;
+    flex-direction: column;
+  }
+}

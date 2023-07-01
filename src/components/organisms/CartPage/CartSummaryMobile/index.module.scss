@@ -1,0 +1,56 @@
+@use '../../../../styles/variables.scss' as *;
+.cart__summary__mobile {
+  box-shadow: $box-shadow;
+  position: fixed;
+  bottom: 64px;
+  background-color: white;
+  padding: 1rem;
+  width: 100vw;
+  border-radius: 1.1rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0.7rem 1rem;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    p {
+      color: $gray;
+    }
+  }
+
+  &__description {
+    p {
+      font-size: 1rem;
+      font-weight: $text-medium;
+    }
+
+    &__total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      p {
+        font-size: 1rem;
+        font-weight: $text-regular;
+        color: $gray;
+      }
+
+      &:last-child {
+        p {
+          font-size: 1rem;
+          font-weight: $text-medium;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

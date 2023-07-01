@@ -1,0 +1,53 @@
+@use 'src/styles/variables' as *;
+.card__address {
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  &__active {
+    background-color: $primary-10;
+    border: 1px solid $primary-60;
+  }
+
+  &__merchant {
+    background-color: $success-0;
+    border: 1px solid $success-20;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    p {
+      font-size: 1rem;
+      font-weight: $text-medium;
+      color: $gray;
+    }
+  }
+
+  &__content {
+    li {
+      line-height: 1.25rem;
+      &:first-child {
+        margin-bottom: 0.25rem;
+        font-size: 1.1rem;
+        font-weight: $text-medium;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__left {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use '../../../../styles/variables.scss' as *;
+
+.action {
+  box-shadow: $box-shadow;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

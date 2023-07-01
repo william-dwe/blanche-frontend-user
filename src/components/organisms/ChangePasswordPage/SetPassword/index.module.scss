@@ -1,0 +1,25 @@
+@use '../../../../styles/variables.scss' as *;
+
+.sp {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 600px;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__info {
+    color: $gray;
+  }
+
+  &__form {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  &__alert {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+@use '../../../styles/variables.scss' as *;
+
+.wdp {
+  box-shadow: $box-shadow;
+  border-radius: 0.25rem;
+  &__title {
+    font-weight: $text-bold;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &__header {
+    margin-bottom: 3rem;
+  }
+  &__code {
+    margin-top: 0.75rem;
+    text-align: center;
+    color: $gray;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+      color: $gray;
+    }
+
+    &__total {
+      color: $gray;
+      font-weight: $text-bold;
+    }
+  }
+  &__sub {
+    font-weight: $text-bold;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__expired {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: $primary-60;
+    font-weight: $text-medium;
+  }
+
+  &__divider {
+    margin: 0.75rem 0;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+}

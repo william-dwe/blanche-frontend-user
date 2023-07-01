@@ -1,0 +1,26 @@
+@use '../../../../styles/variables.scss' as *;
+
+.aw {
+  &__title {
+    text-align: center;
+    font-weight: $text-bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  &__desc {
+    text-align: center;
+    color: $gray;
+  }
+  &__image {
+    width: 200px;
+  }
+  &__button {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  &__container {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}

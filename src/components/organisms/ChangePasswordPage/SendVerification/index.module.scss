@@ -1,0 +1,19 @@
+@use '../../../../styles/variables.scss' as *;
+
+.sv {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 600px;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__info {
+    color: $gray;
+  }
+  &__button {
+    margin-top: 2rem;
+  }
+}

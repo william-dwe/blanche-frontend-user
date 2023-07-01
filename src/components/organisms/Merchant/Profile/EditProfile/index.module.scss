@@ -1,0 +1,16 @@
+@use '../../../../../styles/variables' as *;
+
+.ea {
+  &__header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    &__title {
+      font-weight: $text-bold;
+      margin-bottom: 0.25rem;
+      font-size: 1.5rem;
+    }
+    &__info {
+      color: $gray;
+    }
+  }
+}

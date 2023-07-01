@@ -1,0 +1,38 @@
+@use '../../../../../../styles/variables.scss' as *;
+
+.ss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 1rem;
+
+  > * {
+    flex: 1;
+  }
+
+  &__select {
+    min-width: 100%;
+    flex: 1;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &__title {
+      text-align: right;
+      font-weight: $text-bold;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__title {
+      font-weight: $text-bold;
+    }
+  }
+}

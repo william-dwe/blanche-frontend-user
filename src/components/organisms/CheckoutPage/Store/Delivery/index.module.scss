@@ -1,0 +1,24 @@
+@use 'src/styles/variables' as *;
+.delivery {
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  &__item {
+    &__title {
+      font-size: 1.2rem;
+      font-weight: $text-bold;
+    }
+    &__body {
+      p {
+        &:last-child {
+          font-size: 0.9rem;
+          font-weight: $text-regular;
+          color: $gray;
+        }
+      }
+    }
+  }
+}

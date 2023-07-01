@@ -1,0 +1,53 @@
+@use '../../../styles/variables.scss' as *;
+
+.recommended {
+  padding-top: 1.5rem;
+
+  &__title {
+    font-weight: $text-bold;
+    font-size: 2rem;
+  }
+  &__link {
+    font-weight: $text-bold;
+    color: $primary-60;
+    &:hover {
+      color: $primary-80;
+    }
+  }
+
+  &__button {
+    font-weight: $text-bold;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  &__wrapper {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  &__separator {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid $primary-100;
+    }
+
+    &:not(:empty)::before {
+      margin-right: 2rem;
+    }
+
+    &:not(:empty)::after {
+      margin-left: 2rem;
+    }
+  }
+}

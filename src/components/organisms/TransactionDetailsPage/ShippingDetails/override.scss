@@ -1,0 +1,17 @@
+@use '../../../../styles/variables.scss' as *;
+
+.delivery {
+  .ant-steps-item {
+    .ant-steps-item-container {
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          font-size: 0.875rem;
+        }
+        .ant-steps-item-description {
+          color: $gray;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

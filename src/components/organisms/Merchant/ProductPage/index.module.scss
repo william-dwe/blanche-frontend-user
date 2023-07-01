@@ -1,0 +1,16 @@
+@use '../../../../styles/variables.scss' as *;
+
+.pp {
+  &__action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row-reverse;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,97 @@
+@use 'src/styles/variables' as *;
+.choose__payment__modal {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .card__payment {
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 0.7rem;
+    min-width: 20vw;
+    width: 100%;
+    align-items: center;
+    &:hover {
+      border-color: $primary-60;
+    }
+
+    &__active {
+      border-color: $primary-60;
+      background-color: $primary-10;
+    }
+
+    &__icon {
+      background-color: $primary-70;
+      padding: 0.9rem;
+      display: flex;
+
+      border-radius: 100%;
+      color: white;
+      font-size: 1.9rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    &__content {
+      h6 {
+        font-weight: $text-bold;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        h6 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .border {
+    border-width: 0.5rem;
+    margin: 1rem 0;
+  }
+  &__summary {
+    margin: 1.5rem 0;
+    h6 {
+      font-size: 1.2rem;
+      font-weight: $text-bold;
+    }
+    p {
+      display: flex;
+      font-size: 1.1rem;
+      justify-content: space-between;
+
+      span {
+        font-weight: $text-bold;
+      }
+    }
+  }
+}

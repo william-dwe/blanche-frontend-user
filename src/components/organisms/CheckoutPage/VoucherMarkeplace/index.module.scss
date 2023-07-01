@@ -1,0 +1,14 @@
+@use 'src/styles/variables' as *;
+.voucher__marketplace {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 3.3rem;
+  font-size: 1.2rem;
+  font-weight: $text-bold;
+
+  @media screen and (max-width: 768px) {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}

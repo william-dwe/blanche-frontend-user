@@ -1,0 +1,35 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.ti {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    &__title {
+      font-weight: $text-bold;
+    }
+
+    &__date {
+      font-size: 0.875rem;
+    }
+  }
+  &__notes {
+    color: $gray;
+  }
+  &__amount {
+    font-weight: $text-bold;
+    font-size: 1rem;
+    &__green {
+      color: $success;
+    }
+    &__red {
+      color: $red;
+    }
+  }
+  &__invoice {
+    font-weight: $text-bold;
+    color: $primary-60;
+  }
+}

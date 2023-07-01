@@ -1,0 +1,100 @@
+@use '../../../../../../styles/variables.scss' as *;
+
+.ti {
+  display: flex;
+  box-shadow: $box-shadow;
+  flex-direction: column;
+  gap: 0.7rem;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    &__title {
+      font-weight: $text-bold;
+    }
+
+    &__date {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  &__notes {
+    color: $gray;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.6rem;
+    width: fit-content;
+    gap: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    padding: 0.7rem;
+
+    &__img {
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    &__text {
+      color: $gray;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    &__reason {
+      font-weight: $text-medium;
+    }
+  }
+  &__invoice {
+    font-weight: $text-bold;
+    color: $primary-60;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  &__right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__text {
+      color: $gray;
+      margin: 0.25rem;
+    }
+    &__value {
+      font-weight: $text-medium;
+    }
+  }
+  &__divider {
+    margin: 0.5rem 0;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    &__chat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+    }
+  }
+}

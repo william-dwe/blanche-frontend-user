@@ -1,0 +1,15 @@
+@use '../../../styles/variables' as *;
+
+.rating {
+  padding: 0 0.5rem;
+  &__item {
+    display: flex;
+    align-items: center;
+    &__count {
+      margin-right: 0.25rem;
+    }
+    &__star {
+      color: orange;
+    }
+  }
+}

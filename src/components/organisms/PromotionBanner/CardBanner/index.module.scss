@@ -1,0 +1,85 @@
+@use 'src/styles/variables' as *;
+
+.card__banner {
+  min-height: 28vh;
+  height: 42vh;
+  border-radius: 5rem;
+
+  position: relative;
+
+  &__img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      background: inherit;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(43, 40, 40, 0.247);
+      z-index: 1;
+    }
+
+    &__img {
+      max-width: 100%;
+      height: auto;
+      overflow: hidden;
+      z-index: 0;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    padding: 0 5rem;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 3rem;
+    }
+
+    h4 {
+      font-size: 3rem;
+      font-weight: $text-bold;
+      margin-bottom: 1rem;
+      color: white;
+
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+      margin-bottom: 1rem;
+      color: white;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

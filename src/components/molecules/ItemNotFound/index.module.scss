@@ -1,0 +1,28 @@
+@use '../../../styles/variables.scss' as *;
+
+.inf {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: $box-shadow;
+
+  &__image {
+    margin: 0;
+    width: 160px;
+    height: 160px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &__title {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+
+    &__body {
+      color: $gray;
+    }
+  }
+}

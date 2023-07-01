@@ -1,0 +1,28 @@
+@use '../../../styles/variables' as *;
+
+.content {
+  padding: 1.5rem 0;
+  width: 100%;
+
+  &__header {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    &__result {
+      span {
+        font-weight: $text-bold;
+      }
+    }
+  }
+
+  &__pagination {
+    margin-top: 1rem;
+
+    &__pagination {
+      text-align: right;
+    }
+  }
+}

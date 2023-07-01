@@ -1,0 +1,50 @@
+@use 'src/styles/variables' as *;
+.card__voucher {
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 320px;
+  min-width: fit-content;
+  &__active {
+    background-color: $primary-10;
+    border: 1px solid $primary-60;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    p {
+      font-size: 1rem;
+      font-weight: $text-bold;
+    }
+  }
+
+  &__content {
+    li {
+      color: $gray;
+      &:first-child {
+        font-size: 0.9rem;
+        font-weight: $text-medium;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.voucher__modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.voucher__modal__reset {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0rem 0;
+}

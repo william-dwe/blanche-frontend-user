@@ -1,0 +1,11 @@
+.rc {
+  &__radio {
+    overflow-x: scroll;
+    display: flex;
+    gap: 0.75rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

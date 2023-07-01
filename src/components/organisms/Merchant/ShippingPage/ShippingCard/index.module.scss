@@ -1,0 +1,22 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.sc {
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__img {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__name {
+    font-weight: $text-bold;
+    font-size: 1.25rem;
+  }
+
+  &__type {
+    color: $gray;
+  }
+}

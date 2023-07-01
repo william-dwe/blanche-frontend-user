@@ -1,0 +1,17 @@
+@use '../../../../styles/variables.scss' as *;
+
+.transaction__status {
+  .ant-steps-item-title {
+    font-weight: 600;
+  }
+  .ant-steps-item {
+    .ant-steps-item-container {
+      .ant-steps-item-content {
+        margin-top: 0;
+        .ant-steps-item-description {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

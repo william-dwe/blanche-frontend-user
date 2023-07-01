@@ -1,0 +1,23 @@
+@use 'src/styles/variables' as *;
+
+.wallet__payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 3rem;
+  padding: 5rem 0;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: $text-bold;
+    }
+  }
+}

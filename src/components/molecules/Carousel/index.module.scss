@@ -1,0 +1,38 @@
+@use './../../../styles/variables.scss' as *;
+
+.wrapper {
+  &:hover {
+    .carousel__arrow {
+      opacity: 100%;
+    }
+  }
+}
+
+.carousel {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__arrow {
+    opacity: 0;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__left {
+    left: 20px;
+  }
+
+  &__right {
+    right: 20px;
+  }
+}

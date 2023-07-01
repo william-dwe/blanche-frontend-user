@@ -1,0 +1,18 @@
+@use '../../../../styles/variables.scss' as *;
+
+.hs {
+  &__pagination {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  &__picker {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__date {
+    font-weight: $text-bold;
+  }
+}

@@ -1,0 +1,35 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.product__description {
+  height: 100%;
+  ul {
+    li {
+      display: flex;
+      font-size: 0.9rem;
+      span {
+        font-weight: $text-medium;
+        margin-right: 0.3rem;
+        color: $gray;
+      }
+    }
+  }
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    white-space: pre-line;
+  }
+  button {
+    border: none;
+    background: none;
+    color: $primary-60;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: $text-regular;
+    font-family: 'Poppins', sans-serif;
+  }
+}

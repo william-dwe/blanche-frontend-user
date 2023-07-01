@@ -1,0 +1,48 @@
+@use 'src/styles/variables.scss' as *;
+.list__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .card__review {
+    box-shadow: $box-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__rating {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      gap: 0.7rem;
+      &__user {
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+
+        p {
+          font-size: 1rem;
+          font-weight: $text-bold;
+        }
+      }
+
+      &__img {
+        width: 4rem;
+        margin: inherit;
+      }
+    }
+  }
+}
+
+.no__review {
+  color: $gray;
+}

@@ -1,0 +1,19 @@
+@use '../../../../../styles/variables.scss' as *;
+
+.pm {
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  &__title {
+    font-size: 1.25rem;
+    font-weight: $text-bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__info {
+    color: $gray;
+  }
+
+  &__header {
+    margin-bottom: 1rem;
+  }
+}

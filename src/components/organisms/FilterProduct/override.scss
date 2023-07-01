@@ -1,0 +1,7 @@
+@use '../../../styles/variables' as *;
+
+.filter {
+  .ant-collapse-header-text {
+    font-weight: $text-bold;
+  }
+}

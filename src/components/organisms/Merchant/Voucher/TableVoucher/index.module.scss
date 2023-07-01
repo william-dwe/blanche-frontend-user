@@ -1,0 +1,50 @@
+@use 'src/styles/variables.scss' as *;
+.table__voucher {
+  margin-top: 3rem;
+
+  vertical-align: middle !important;
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  &__cv {
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle !important;
+    &__info {
+      color: $primary-100;
+      text-align: left;
+
+      &:hover {
+        color: $primary-90 !important;
+      }
+      &__name {
+        font-weight: $text-bold;
+      }
+    }
+  }
+
+  &__tp {
+    display: flex;
+
+    flex-direction: column;
+
+    &__header__tag {
+      width: fit-content;
+    }
+
+    &__item {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      &:first-child {
+        font-weight: $text-bold;
+      }
+    }
+  }
+}

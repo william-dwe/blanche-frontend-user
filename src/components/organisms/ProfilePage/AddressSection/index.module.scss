@@ -1,0 +1,25 @@
+@use '../../../../styles/variables.scss' as *;
+.address__section {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+    &__left {
+      &__title {
+        font-size: 1.5rem;
+        font-weight: $text-bold;
+      }
+      &__info {
+        color: $gray;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  &__list {
+    &__divider {
+      margin: 1rem 0;
+    }
+  }
+}

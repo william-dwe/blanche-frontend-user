@@ -1,0 +1,52 @@
+@use '../../../../styles/variables.scss' as *;
+
+.cv {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 600px;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__info {
+    color: $gray;
+  }
+  &__container {
+    padding-top: 4rem;
+    justify-content: center;
+  }
+  &__button {
+    margin-top: 1rem;
+  }
+  &__resend {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: $gray;
+
+    &__button {
+      color: $primary-70;
+      min-width: 50px;
+      padding: 0;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__cd {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+
+    span {
+      color: $gray;
+    }
+  }
+}

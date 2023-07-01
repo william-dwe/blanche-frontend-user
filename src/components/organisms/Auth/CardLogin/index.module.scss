@@ -1,0 +1,58 @@
+@use '../../../../styles/variables' as *;
+
+.card__login {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  line-height: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+
+  a {
+    color: $primary-70;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h6 {
+      font-size: 2.5rem;
+      font-weight: $text-bold;
+      color: $primary-100;
+    }
+
+    a {
+      color: $primary-70;
+      font-size: 1.1rem;
+    }
+    margin-bottom: 1.5rem;
+  }
+
+  &__alert {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $gray;
+  }
+
+  &__forget {
+    text-align: right;
+  }
+
+  &__google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    &__icon {
+      margin: 0;
+      height: 0.875rem;
+    }
+  }
+}
